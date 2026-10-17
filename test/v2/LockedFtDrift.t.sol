@@ -78,7 +78,7 @@ contract LockedFtDrift is Test {
         marketConfig = JSONLoader.getMarketConfigFromJson(treasurer, testdata, ".marketConfig");
         orderConfig = JSONLoader.getOrderConfigFromJson(testdata, ".orderConfig");
         marketConfig.maturity = uint64(currentTime + 90 days);
-        res = DeployUtils.deployMockMarket(deployer, marketConfig, maxLtv, liquidationLtv);
+        res = DeployUtils.deployMarket(deployer, marketConfig, maxLtv, liquidationLtv);
         MarketConfig memory marketConfig2 = JSONLoader.getMarketConfigFromJson(treasurer, testdata, ".marketConfig");
         marketConfig2.maturity = uint64(currentTime + 180 days);
         TermMaxFactoryV2 factory =
