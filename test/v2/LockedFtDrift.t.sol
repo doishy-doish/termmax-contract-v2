@@ -150,14 +150,22 @@ contract LockedFtDrift is Test {
         vm.stopPrank();
     }
 
-    function test_lockedFtDrift_blocksSwaps() public {
-        vm.warp(currentTime + 60 days);
-        uint128 tokenAmtIn = 100e8;
+    function test_lockedFtDrift_10d() public {
+        vm.warp(currentTime + 10 days);
+        buyXt(48.219178e8, 1000e8);
+    }
+
+    function test_lockedFtDrift_30d() public {
+        vm.warp(currentTime + 30 days);
+        buyXt(48.219178e8, 1000e8);
+    }
+
+    function buyXt(uint128 tokenAmtIn, uint128 xtAmtOut) internal {
         address taker = vm.randomAddress();
         res.debt.mint(taker, tokenAmtIn);
         vm.startPrank(taker);
         res.debt.approve(address(res.order), tokenAmtIn);
-        res.order.swapExactTokenToToken(res.debt, res.ft, taker, tokenAmtIn, 1, block.timestamp + 1 hours);
+        res.order.swapExactTokenToToken(res.debt, res.xt, taker, tokenAmtIn, xtAmtOut, block.timestamp + 1 hours);
         vm.stopPrank();
     }
 }
