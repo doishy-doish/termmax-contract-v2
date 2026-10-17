@@ -38,6 +38,7 @@ import {
 } from "contracts/v2/vault/TermMaxVaultV2.sol";
 import {VaultInitialParamsV2} from "contracts/v2/storage/TermMaxStorageV2.sol";
 import {TermMaxFactoryV2} from "contracts/v2/factory/TermMaxFactoryV2.sol";
+import {SwapUtils} from "./utils/SwapUtils.sol";
 
 contract LockedFtDrift is Test {
     using JSONLoader for *;
@@ -152,12 +153,29 @@ contract LockedFtDrift is Test {
 
     function test_lockedFtDrift_10d() public {
         vm.warp(currentTime + 10 days);
-        buyXt(48.219178e8, 1000e8);
+        fairBuyXt(10e8);
+    }
+
+    function test_lockedFtDrift_20d() public {
+        vm.warp(currentTime + 20 days);
+        fairBuyXt(10e8);
     }
 
     function test_lockedFtDrift_30d() public {
         vm.warp(currentTime + 30 days);
-        buyXt(48.219178e8, 1000e8);
+        fairBuyXt(10e8);
+    }
+
+    function fairBuyXt(uint128 tokenAmtIn) internal {
+        (, uint256 pXt) = SwapUtils.getPrice(res);
+        uint128 xtOut = uint128((uint256(tokenAmtIn) * Constants.DECIMAL_BASE) / pXt);
+        xtOut = (xtOut * 98) / 100;
+        address taker = vm.randomAddress();
+        res.debt.mint(taker, tokenAmtIn);
+        vm.startPrank(taker);
+        res.debt.approve(address(res.order), tokenAmtIn);
+        res.order.swapExactTokenToToken(res.debt, res.xt, taker, tokenAmtIn, xtOut, block.timestamp + 1 hours);
+        vm.stopPrank();
     }
 
     function buyXt(uint128 tokenAmtIn, uint128 xtAmtOut) internal {
@@ -168,4 +186,3 @@ contract LockedFtDrift is Test {
         res.order.swapExactTokenToToken(res.debt, res.xt, taker, tokenAmtIn, xtAmtOut, block.timestamp + 1 hours);
         vm.stopPrank();
     }
-}
