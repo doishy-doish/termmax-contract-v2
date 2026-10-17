@@ -1,0 +1,28 @@
+name: lockedft
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  lockedft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+      - name: Run LockedFtDrift
+        run: |
+          set +e
+          env FOUNDRY_PROFILE=ci forge test --match-contract LockedFtDrift -vvvv > lockedft-out.txt 2>&1
+          echo "EXIT=$?" >> lockedft-out.txt
+          tail -c 60000 lockedft-out.txt > lockedft-tail.txt || cp lockedft-out.txt lockedft-tail.txt
+          git config user.name "lockedft-bot"
+          git config user.email "lockedft-bot@local"
+          git add -f lockedft-tail.txt
+          git commit -m "lockedft tail" || true
+          git push origin HEAD:main
+          exit 0
