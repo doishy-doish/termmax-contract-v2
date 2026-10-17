@@ -1,509 +1,159 @@
-Warning: This is a nightly build of Foundry. It is recommended to use the latest stable version. To mute this warning set `FOUNDRY_DISABLE_NIGHTLY_WARNING` in your environment. 
-
-Warning: Selected profile `ci` does not exist; falling back to the default profile.
-Compiling 342 files with Solc 0.8.37
-Solc 0.8.37 finished in 57.38s
-Compiler run successful with warnings:
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/Vm.sol:5:1:
-  |
-5 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/StdCheats.sol:4:1:
-  |
-4 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/StdJson.sol:4:1:
-  |
-4 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/interfaces/IMulticall3.sol:4:1:
-  |
-4 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/StdUtils.sol:4:1:
-  |
-4 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/StdAssertions.sol:3:1:
-  |
-3 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/StdInvariant.sol:4:1:
-  |
-4 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/StdToml.sol:4:1:
-  |
-4 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (8506): Experimental pragma ABIEncoderV2 is deprecated and will be removed in a future release.
- --> dependencies/forge-std-1.9.6/src/Test.sol:4:1:
-  |
-4 | pragma experimental ABIEncoderV2;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-  --> contracts/v2/tokens/StableERC4626ForVenus.sol:67:9:
-   |
-67 |         uint256 error = thirdPool.accrueInterest();
-   |         ^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-  --> contracts/v2/tokens/StableERC4626ForVenus.sol:97:9:
-   |
-97 |         uint256 error = thirdPool.accrueInterest();
-   |         ^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-   --> contracts/v2/tokens/StableERC4626ForVenus.sol:136:9:
-    |
-136 |         uint256 error = thirdPool.accrueInterest();
-    |         ^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1186:9:
-     |
-1186 |         string calldata error
-     |         ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1200:9:
-     |
-1200 |         string calldata error
-     |         ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1208:79:
-     |
-1208 |     function assertApproxEqAbs(uint256 left, uint256 right, uint256 maxDelta, string calldata error) external pure;
-     |                                                                               ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1215:77:
-     |
-1215 |     function assertApproxEqAbs(int256 left, int256 right, uint256 maxDelta, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1232:9:
-     |
-1232 |         string calldata error
-     |         ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1250:9:
-     |
-1250 |         string calldata error
-     |         ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1260:86:
-     |
-1260 |     function assertApproxEqRel(uint256 left, uint256 right, uint256 maxPercentDelta, string calldata error)
-     |                                                                                      ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1271:84:
-     |
-1271 |     function assertApproxEqRel(int256 left, int256 right, uint256 maxPercentDelta, string calldata error)
-     |                                                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1280:77:
-     |
-1280 |     function assertEqDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1287:75:
-     |
-1287 |     function assertEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1293:46:
-     |
-1293 |     function assertEq(bool left, bool right, string calldata error) external pure;
-     |                                              ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1299:68:
-     |
-1299 |     function assertEq(string calldata left, string calldata right, string calldata error) external pure;
-     |                                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1305:66:
-     |
-1305 |     function assertEq(bytes calldata left, bytes calldata right, string calldata error) external pure;
-     |                                                                  ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1311:68:
-     |
-1311 |     function assertEq(bool[] calldata left, bool[] calldata right, string calldata error) external pure;
-     |                                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1317:74:
-     |
-1317 |     function assertEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
-     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1323:72:
-     |
-1323 |     function assertEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
-     |                                                                        ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1332:74:
-     |
-1332 |     function assertEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
-     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1338:74:
-     |
-1338 |     function assertEq(bytes32[] calldata left, bytes32[] calldata right, string calldata error) external pure;
-     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1344:72:
-     |
-1344 |     function assertEq(string[] calldata left, string[] calldata right, string calldata error) external pure;
-     |                                                                        ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1350:70:
-     |
-1350 |     function assertEq(bytes[] calldata left, bytes[] calldata right, string calldata error) external pure;
-     |                                                                      ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1353:52:
-     |
-1353 |     function assertEq(uint256 left, uint256 right, string calldata error) external pure;
-     |                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1359:50:
-     |
-1359 |     function assertEq(int256 left, int256 right, string calldata error) external pure;
-     |                                                  ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1365:52:
-     |
-1365 |     function assertEq(address left, address right, string calldata error) external pure;
-     |                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1371:52:
-     |
-1371 |     function assertEq(bytes32 left, bytes32 right, string calldata error) external pure;
-     |                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1377:42:
-     |
-1377 |     function assertFalse(bool condition, string calldata error) external pure;
-     |                                          ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1385:77:
-     |
-1385 |     function assertGeDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1393:75:
-     |
-1393 |     function assertGeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1400:52:
-     |
-1400 |     function assertGe(uint256 left, uint256 right, string calldata error) external pure;
-     |                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1407:50:
-     |
-1407 |     function assertGe(int256 left, int256 right, string calldata error) external pure;
-     |                                                  ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1415:77:
-     |
-1415 |     function assertGtDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1423:75:
-     |
-1423 |     function assertGtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1430:52:
-     |
-1430 |     function assertGt(uint256 left, uint256 right, string calldata error) external pure;
-     |                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1437:50:
-     |
-1437 |     function assertGt(int256 left, int256 right, string calldata error) external pure;
-     |                                                  ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1445:77:
-     |
-1445 |     function assertLeDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1453:75:
-     |
-1453 |     function assertLeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1460:52:
-     |
-1460 |     function assertLe(uint256 left, uint256 right, string calldata error) external pure;
-     |                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1467:50:
-     |
-1467 |     function assertLe(int256 left, int256 right, string calldata error) external pure;
-     |                                                  ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1475:77:
-     |
-1475 |     function assertLtDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1483:75:
-     |
-1483 |     function assertLtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1490:52:
-     |
-1490 |     function assertLt(uint256 left, uint256 right, string calldata error) external pure;
-     |                                                    ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1497:50:
-     |
-1497 |     function assertLt(int256 left, int256 right, string calldata error) external pure;
-     |                                                  ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1504:80:
-     |
-1504 |     function assertNotEqDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                                ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1511:78:
-     |
-1511 |     function assertNotEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
-     |                                                                              ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1517:49:
-     |
-1517 |     function assertNotEq(bool left, bool right, string calldata error) external pure;
-     |                                                 ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1523:71:
-     |
-1523 |     function assertNotEq(string calldata left, string calldata right, string calldata error) external pure;
-     |                                                                       ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1529:69:
-     |
-1529 |     function assertNotEq(bytes calldata left, bytes calldata right, string calldata error) external pure;
-     |                                                                     ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1535:71:
-     |
-1535 |     function assertNotEq(bool[] calldata left, bool[] calldata right, string calldata error) external pure;
-     |                                                                       ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1541:77:
-     |
-1541 |     function assertNotEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1547:75:
-     |
-1547 |     function assertNotEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
-     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1556:77:
-     |
-1556 |     function assertNotEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1562:77:
-     |
-1562 |     function assertNotEq(bytes32[] calldata left, bytes32[] calldata right, string calldata error) external pure;
-     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1568:75:
-     |
-1568 |     function assertNotEq(string[] calldata left, string[] calldata right, string calldata error) external pure;
-     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1574:73:
-     |
-1574 |     function assertNotEq(bytes[] calldata left, bytes[] calldata right, string calldata error) external pure;
-     |                                                                         ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1577:55:
-     |
-1577 |     function assertNotEq(uint256 left, uint256 right, string calldata error) external pure;
-     |                                                       ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1583:53:
-     |
-1583 |     function assertNotEq(int256 left, int256 right, string calldata error) external pure;
-     |                                                     ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1589:55:
-     |
-1589 |     function assertNotEq(address left, address right, string calldata error) external pure;
-     |                                                       ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1595:55:
-     |
-1595 |     function assertNotEq(bytes32 left, bytes32 right, string calldata error) external pure;
-     |                                                       ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
-    --> dependencies/forge-std-1.9.6/src/Vm.sol:1601:41:
-     |
-1601 |     function assertTrue(bool condition, string calldata error) external pure;
-     |                                         ^^^^^^^^^^^^^^^^^^^^^
-
-Warning (4591): There are more than 256 warnings. Ignoring the rest.
-
-Ran 1 test for test/v2/LockedFtDrift.t.sol:LockedFtDrift
-[FAIL: panic: arithmetic underflow or overflow (0x11)] test_lockedFtDrift_blocksSwaps() (gas: 156337)
-Traces:
-  [14905781] LockedFtDrift::setUp()
-    ├─ [0] VM::startPrank(0x0c674EC529Ec477f0C1791B8f3C13Bce38907b32)
+85bE102ac3EAc297483Dd6233D62b3e1496]) [delegatecall]
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ [9031] → new <unknown>@0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4
+    │   │   │   └─ ← [Return] 45 bytes of code
+    │   │   ├─ [288675] 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4::initialize(VaultInitialParamsV2({ admin: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, curator: 0x2eE89cfEC65764c2009Dd7a4a11A0d0A942BAb6f, guardian: 0xD6d4773B77b1Ff7a24E7E386fb3C5676e2d8dA15, timelock: 86400 [8.64e4], asset: 0x3F0309B0d0aD3B8D18EB3b700C5a51ca7F45BB20, pool: 0x0000000000000000000000000000000000000000, maxCapacity: 1000000000000000000000000 [1e24], name: "Vault-DAI", symbol: "Vault-DAI", performanceFeeRate: 50000000 [5e7], minApy: 0 }))
+    │   │   │   ├─ [285916] TermMaxVaultV2::initialize(VaultInitialParamsV2({ admin: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, curator: 0x2eE89cfEC65764c2009Dd7a4a11A0d0A942BAb6f, guardian: 0xD6d4773B77b1Ff7a24E7E386fb3C5676e2d8dA15, timelock: 86400 [8.64e4], asset: 0x3F0309B0d0aD3B8D18EB3b700C5a51ca7F45BB20, pool: 0x0000000000000000000000000000000000000000, maxCapacity: 1000000000000000000000000 [1e24], name: "Vault-DAI", symbol: "Vault-DAI", performanceFeeRate: 50000000 [5e7], minApy: 0 })) [delegatecall]
+    │   │   │   │   ├─ emit OwnershipTransferred(previousOwner: 0x0000000000000000000000000000000000000000, newOwner: 0x890152947a11abe0bc30307d886A208Bb7D35dd6)
+    │   │   │   │   ├─ [247] MockERC20::decimals() [staticcall]
+    │   │   │   │   │   └─ ← [Return] 8
+    │   │   │   │   ├─ [4660] OrderManagerV2::accruedInterest() [delegatecall]
+    │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   ├─ emit SetPerformanceFeeRate(caller: TermMaxVaultFactoryV2: [0x210d348Df32A3971bb6103B77d77473f2C804d56], newPerformanceFeeRate: 50000000 [5e7])
+    │   │   │   │   ├─ emit SetTimelock(caller: TermMaxVaultFactoryV2: [0x210d348Df32A3971bb6103B77d77473f2C804d56], newTimelock: 86400 [8.64e4])
+    │   │   │   │   ├─ emit SetMinApy(caller: TermMaxVaultFactoryV2: [0x210d348Df32A3971bb6103B77d77473f2C804d56], newMinApy: 0)
+    │   │   │   │   ├─ emit SetGuardian(caller: TermMaxVaultFactoryV2: [0x210d348Df32A3971bb6103B77d77473f2C804d56], newGuardian: 0xD6d4773B77b1Ff7a24E7E386fb3C5676e2d8dA15)
+    │   │   │   │   ├─ emit SetCapacity(caller: TermMaxVaultFactoryV2: [0x210d348Df32A3971bb6103B77d77473f2C804d56], newCapacity: 1000000000000000000000000 [1e24])
+    │   │   │   │   ├─ emit SetCurator(newCurator: 0x2eE89cfEC65764c2009Dd7a4a11A0d0A942BAb6f)
+    │   │   │   │   ├─ emit SetPool(caller: TermMaxVaultFactoryV2: [0x210d348Df32A3971bb6103B77d77473f2C804d56], pool: 0x0000000000000000000000000000000000000000)
+    │   │   │   │   ├─ emit Initialized(version: 1)
+    │   │   │   │   └─ ← [Stop]
+    │   │   │   └─ ← [Return]
+    │   │   ├─ [32541] ERC1967Proxy::fallback([0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4], 1, true)
+    │   │   │   ├─ [29713] WhitelistManager::batchSetWhitelist([0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4], 1, true) [delegatecall]
+    │   │   │   │   ├─ [3529] ERC1967Proxy::fallback(0xdc72ed553f2544c34465af23b847953efeb813428162d767f9ba5f4013be6760, TermMaxVaultFactoryV2: [0x210d348Df32A3971bb6103B77d77473f2C804d56]) [staticcall]
+    │   │   │   │   │   ├─ [3216] AccessManagerV2::hasRole(0xdc72ed553f2544c34465af23b847953efeb813428162d767f9ba5f4013be6760, TermMaxVaultFactoryV2: [0x210d348Df32A3971bb6103B77d77473f2C804d56]) [delegatecall]
+    │   │   │   │   │   │   └─ ← [Return] true
+    │   │   │   │   │   └─ ← [Return] true
+    │   │   │   │   ├─ emit WhitelistUpdated(contractAddress: [0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4], module: 1, approved: true)
+    │   │   │   │   └─ ← [Stop]
+    │   │   │   └─ ← [Return]
+    │   │   ├─ emit VaultCreated(vault: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, creator: LockedFtDrift: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], initialParams: VaultInitialParamsV2({ admin: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, curator: 0x2eE89cfEC65764c2009Dd7a4a11A0d0A942BAb6f, guardian: 0xD6d4773B77b1Ff7a24E7E386fb3C5676e2d8dA15, timelock: 86400 [8.64e4], asset: 0x3F0309B0d0aD3B8D18EB3b700C5a51ca7F45BB20, pool: 0x0000000000000000000000000000000000000000, maxCapacity: 1000000000000000000000000 [1e24], name: "Vault-DAI", symbol: "Vault-DAI", performanceFeeRate: 50000000 [5e7], minApy: 0 }))
+    │   │   └─ ← [Return] 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4
+    │   └─ ← [Return] 0x000000000000000000000000afb2bae342a2a96607e3c5450e57d525fb6613b4
+    ├─ [0] VM::startPrank(0x890152947a11abe0bc30307d886A208Bb7D35dd6)
     │   └─ ← [Return]
-    ├─ [0] VM::projectRoot() [staticcall]
-    │   └─ ← [Return] "/home/runner/work/termmax-contract-v2/termmax-contract-v2"
-    ├─ [0] VM::readFile("/home/runner/work/termmax-contract-v2/termmax-contract-v2/test/testdata/testdata.json") [staticcall]
-    │   └─ ← [Return] <file>
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".currentTime") [staticcall]
-    │   └─ ← [Return] "1734786167"
-    ├─ [0] VM::parseUint("1734786167") [staticcall]
-    │   └─ ← [Return] 1734786167 [1.734e9]
+    ├─ [68252] 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4::submitMarket(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, true)
+    │   ├─ [44005] TermMaxVaultV2::submitMarket(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, true) [delegatecall]
+    │   │   ├─ [7575] ERC1967Proxy::fallback(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, 2) [staticcall]
+    │   │   │   ├─ [2762] WhitelistManager::isWhitelisted(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, 2) [delegatecall]
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ emit SubmitMarketToWhitelist(market: 0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, validAt: 1734872567 [1.734e9])
+    │   │   └─ ← [Stop]
+    │   └─ ← [Return]
+    ├─ [68252] 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4::submitMarket(0xb64Ec6C20c46b17D712CC08f8Af1229808B79431, true)
+    │   ├─ [44005] TermMaxVaultV2::submitMarket(0xb64Ec6C20c46b17D712CC08f8Af1229808B79431, true) [delegatecall]
+    │   │   ├─ [7575] ERC1967Proxy::fallback(0xb64Ec6C20c46b17D712CC08f8Af1229808B79431, 2) [staticcall]
+    │   │   │   ├─ [2762] WhitelistManager::isWhitelisted(0xb64Ec6C20c46b17D712CC08f8Af1229808B79431, 2) [delegatecall]
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ emit SubmitMarketToWhitelist(market: 0xb64Ec6C20c46b17D712CC08f8Af1229808B79431, validAt: 1734872567 [1.734e9])
+    │   │   └─ ← [Stop]
+    │   └─ ← [Return]
+    ├─ [0] VM::warp(1734872568 [1.734e9])
+    │   └─ ← [Return]
+    ├─ [66212] 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4::acceptMarket(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5)
+    │   ├─ [42111] TermMaxVaultV2::acceptMarket(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5) [delegatecall]
+    │   │   ├─ [7575] ERC1967Proxy::fallback(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, 2) [staticcall]
+    │   │   │   ├─ [2762] WhitelistManager::isWhitelisted(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, 2) [delegatecall]
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ emit SetMarketWhitelist(caller: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, market: 0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, isWhitelisted: true)
+    │   │   └─ ← [Stop]
+    │   └─ ← [Return]
+    ├─ [66212] 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4::acceptMarket(0xb64Ec6C20c46b17D712CC08f8Af1229808B79431)
+    │   ├─ [42111] TermMaxVaultV2::acceptMarket(0xb64Ec6C20c46b17D712CC08f8Af1229808B79431) [delegatecall]
+    │   │   ├─ [7575] ERC1967Proxy::fallback(0xb64Ec6C20c46b17D712CC08f8Af1229808B79431, 2) [staticcall]
+    │   │   │   ├─ [2762] WhitelistManager::isWhitelisted(0xb64Ec6C20c46b17D712CC08f8Af1229808B79431, 2) [delegatecall]
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ emit SetMarketWhitelist(caller: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, market: 0xb64Ec6C20c46b17D712CC08f8Af1229808B79431, isWhitelisted: true)
+    │   │   └─ ← [Stop]
+    │   └─ ← [Return]
     ├─ [0] VM::warp(1734786167 [1.734e9])
     │   └─ ← [Return]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".marketConfig.maturity") [staticcall]
-    │   └─ ← [Return] "1739970167"
-    ├─ [0] VM::parseUint("1739970167") [staticcall]
-    │   └─ ← [Return] 1739970167 [1.739e9]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".marketConfig.mintGtFeeRatio") [staticcall]
-    │   └─ ← [Return] "1000000"
-    ├─ [0] VM::parseUint("1000000") [staticcall]
-    │   └─ ← [Return] 1000000 [1e6]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".marketConfig.mintGtFeeRef") [staticcall]
-    │   └─ ← [Return] "2000000"
-    ├─ [0] VM::parseUint("2000000") [staticcall]
-    │   └─ ← [Return] 2000000 [2e6]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".marketConfig.lendTakerFeeRatio") [staticcall]
-    │   └─ ← [Return] "1000000"
-    ├─ [0] VM::parseUint("1000000") [staticcall]
-    │   └─ ← [Return] 1000000 [1e6]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".marketConfig.borrowTakerFeeRatio") [staticcall]
-    │   └─ ← [Return] "2000000"
-    ├─ [0] VM::parseUint("2000000") [staticcall]
-    │   └─ ← [Return] 2000000 [2e6]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".marketConfig.lendMakerFeeRatio") [staticcall]
-    │   └─ ← [Return] "1000000"
-    ├─ [0] VM::parseUint("1000000") [staticcall]
-    │   └─ ← [Return] 1000000 [1e6]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".marketConfig.borrowMakerFeeRatio") [staticcall]
-    │   └─ ← [Return] "2000000"
-    ├─ [0] VM::parseUint("2000000") [staticcall]
-    │   └─ ← [Return] 2000000 [2e6]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".orderConfig.maxXtReserve") [staticcall]
-    │   └─ ← [Return] "200000000000"
-    ├─ [0] VM::parseUint("200000000000") [staticcall]
-    │   └─ ← [Return] 200000000000 [2e11]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".orderConfig.gtId") [staticcall]
-    │   └─ ← [Return] "0"
-    ├─ [0] VM::parseUint("0") [staticcall]
-    │   └─ ← [Return] 0
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".orderConfig.borrowCurveCuts.length") [staticcall]
-    │   └─ ← [Return] "6"
-    ├─ [0] VM::parseUint("6") [staticcall]
-    │   └─ ← [Return] 6
-    ├─ [0] VM::toString(0) [staticcall]
-    │   └─ ← [Return] "0"
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".orderConfig.borrowCurveCuts.0.xtReserve") [staticcall]
-    │   └─ ← [Return] "0"
-    ├─ [0] VM::parseUint("0") [staticcall]
-    │   └─ ← [Return] 0
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".orderConfig.borrowCurveCuts.0.liqSquare") [staticcall]
-    │   └─ ← [Return] "12253114043286217560162304"
-    ├─ [0] VM::parseUint("12253114043286217560162304") [staticcall]
-    │   └─ ← [Return] 12253114043286217560162304 [1.225e25]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".orderConfig.borrowCurveCuts.0.offset") [staticcall]
-    │   └─ ← [Return] "5605197689344"
-    ├─ [0] VM::parseInt("5605197689344") [staticcall]
-    │   └─ ← [Return] 5605197689344 [5.605e12]
-    ├─ [0] VM::toString(1) [staticcall]
-    │   └─ ← [Return] "1"
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".orderConfig.borrowCurveCuts.1.xtReserve") [staticcall]
-    │   └─ ← [Return] "7200000000"
-    ├─ [0] VM::parseUint("7200000000") [staticcall]
-    │   └─ ← [Return] 7200000000 [7.2e9]
-    ├─ [0] VM::parseJsonString("<stringified JSON>", ".orderConfig.borrowCurveCuts.1.liqSquare") [staticcall]
-    │   └─ ← [Return] "3308340791687278741"
-    ├─ [0] VM::parseUint("3308340791687278741") [staticcall]
-    │   └─ ← [Return] 3308340791687278741 [3.308e18]
-    �
+    ├─ [68073] MockERC20::mint(0x890152947a11abe0bc30307d886A208Bb7D35dd6, 1000000000000 [1e12])
+    │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, amount: 1000000000000 [1e12])
+    │   └─ ← [Stop]
+    ├─ [45933] MockERC20::approve(0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, 1000000000000 [1e12])
+    │   ├─ emit Approval(owner: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, spender: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, amount: 1000000000000 [1e12])
+    │   └─ ← [Return] true
+    ├─ [182949] 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4::deposit(1000000000000 [1e12], 0x890152947a11abe0bc30307d886A208Bb7D35dd6)
+    │   ├─ [158663] TermMaxVaultV2::deposit(1000000000000 [1e12], 0x890152947a11abe0bc30307d886A208Bb7D35dd6) [delegatecall]
+    │   │   ├─ [35023] MockERC20::transferFrom(0x890152947a11abe0bc30307d886A208Bb7D35dd6, 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, 1000000000000 [1e12])
+    │   │   │   ├─ emit Transfer(from: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, to: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, amount: 1000000000000 [1e12])
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ [47407] OrderManagerV2::depositAssets(MockERC20: [0x3F0309B0d0aD3B8D18EB3b700C5a51ca7F45BB20], 1000000000000 [1e12]) [delegatecall]
+    │   │   │   └─ ← [Stop]
+    │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, amount: 1000000000000 [1e12])
+    │   │   ├─ emit Deposit(sender: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, owner: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, assets: 1000000000000 [1e12], shares: 1000000000000 [1e12])
+    │   │   └─ ← [Return] 1000000000000 [1e12]
+    │   └─ ← [Return] 1000000000000 [1e12]
+    ├─ [1267256] 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4::createOrder(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, OrderV2ConfigurationParams({ originalVirtualXtReserve: 0, virtualXtReserve: 1000000000000 [1e12], maxXtReserve: 1000000000000000000000000 [1e24], curveCuts: CurveCuts({ lendCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 17148936676412860051488768 [1.714e25], offset: 6547697434292 [6.547e12] }), CurveCut({ xtReserve: 8200000000 [8.2e9], liqSquare: 3601276702046700610 [3.601e18], offset: -5161974583 [-5.161e9] }), CurveCut({ xtReserve: 9000000000 [9e9], liqSquare: 51800738781260893117687869 [5.18e25], offset: 14547185370727 [1.454e13] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1554022163437826793 [1.554e18], offset: -35426169851 [-3.542e10] }), CurveCut({ xtReserve: 39000000000 [3.9e10], liqSquare: 433646276003678296168 [4.336e20], offset: 20699832775 [2.069e10] }), CurveCut({ xtReserve: 39200000000 [3.92e10], liqSquare: 1588671805064995511 [1.588e18], offset: -35574439899 [-3.557e10] })], borrowCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 12253114043286217560162304 [1.225e25], offset: 5605197689344 [5.605e12] }), CurveCut({ xtReserve: 7200000000 [7.2e9], liqSquare: 3308340791687278741 [3.308e18], offset: -4270879534 [-4.27e9] }), CurveCut({ xtReserve: 8000000000 [8e9], liqSquare: 6832763607918441056808585 [6.832e24], offset: 5351194154482 [5.351e12] }), CurveCut({ xtReserve: 19200000000 [1.92e10], liqSquare: 1571535629821241443 [1.571e18], offset: -16590539411 [-1.659e10] }), CurveCut({ xtReserve: 20000000000 [2e10], liqSquare: 3473307729328620213070793 [3.473e24], offset: 5048683691704 [5.048e12] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1424056169024734287 [1.424e18], offset: -34904520632 [-3.49e10] })] }) }))
+    │   ├─ [1232462] TermMaxVaultV2::createOrder(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, OrderV2ConfigurationParams({ originalVirtualXtReserve: 0, virtualXtReserve: 1000000000000 [1e12], maxXtReserve: 1000000000000000000000000 [1e24], curveCuts: CurveCuts({ lendCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 17148936676412860051488768 [1.714e25], offset: 6547697434292 [6.547e12] }), CurveCut({ xtReserve: 8200000000 [8.2e9], liqSquare: 3601276702046700610 [3.601e18], offset: -5161974583 [-5.161e9] }), CurveCut({ xtReserve: 9000000000 [9e9], liqSquare: 51800738781260893117687869 [5.18e25], offset: 14547185370727 [1.454e13] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1554022163437826793 [1.554e18], offset: -35426169851 [-3.542e10] }), CurveCut({ xtReserve: 39000000000 [3.9e10], liqSquare: 433646276003678296168 [4.336e20], offset: 20699832775 [2.069e10] }), CurveCut({ xtReserve: 39200000000 [3.92e10], liqSquare: 1588671805064995511 [1.588e18], offset: -35574439899 [-3.557e10] })], borrowCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 12253114043286217560162304 [1.225e25], offset: 5605197689344 [5.605e12] }), CurveCut({ xtReserve: 7200000000 [7.2e9], liqSquare: 3308340791687278741 [3.308e18], offset: -4270879534 [-4.27e9] }), CurveCut({ xtReserve: 8000000000 [8e9], liqSquare: 6832763607918441056808585 [6.832e24], offset: 5351194154482 [5.351e12] }), CurveCut({ xtReserve: 19200000000 [1.92e10], liqSquare: 1571535629821241443 [1.571e18], offset: -16590539411 [-1.659e10] }), CurveCut({ xtReserve: 20000000000 [2e10], liqSquare: 3473307729328620213070793 [3.473e24], offset: 5048683691704 [5.048e12] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1424056169024734287 [1.424e18], offset: -34904520632 [-3.49e10] })] }) })) [delegatecall]
+    │   │   ├─ [1209008] OrderManagerV2::createOrder(0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, OrderV2ConfigurationParams({ originalVirtualXtReserve: 0, virtualXtReserve: 1000000000000 [1e12], maxXtReserve: 1000000000000000000000000 [1e24], curveCuts: CurveCuts({ lendCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 17148936676412860051488768 [1.714e25], offset: 6547697434292 [6.547e12] }), CurveCut({ xtReserve: 8200000000 [8.2e9], liqSquare: 3601276702046700610 [3.601e18], offset: -5161974583 [-5.161e9] }), CurveCut({ xtReserve: 9000000000 [9e9], liqSquare: 51800738781260893117687869 [5.18e25], offset: 14547185370727 [1.454e13] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1554022163437826793 [1.554e18], offset: -35426169851 [-3.542e10] }), CurveCut({ xtReserve: 39000000000 [3.9e10], liqSquare: 433646276003678296168 [4.336e20], offset: 20699832775 [2.069e10] }), CurveCut({ xtReserve: 39200000000 [3.92e10], liqSquare: 1588671805064995511 [1.588e18], offset: -35574439899 [-3.557e10] })], borrowCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 12253114043286217560162304 [1.225e25], offset: 5605197689344 [5.605e12] }), CurveCut({ xtReserve: 7200000000 [7.2e9], liqSquare: 3308340791687278741 [3.308e18], offset: -4270879534 [-4.27e9] }), CurveCut({ xtReserve: 8000000000 [8e9], liqSquare: 6832763607918441056808585 [6.832e24], offset: 5351194154482 [5.351e12] }), CurveCut({ xtReserve: 19200000000 [1.92e10], liqSquare: 1571535629821241443 [1.571e18], offset: -16590539411 [-1.659e10] }), CurveCut({ xtReserve: 20000000000 [2e10], liqSquare: 3473307729328620213070793 [3.473e24], offset: 5048683691704 [5.048e12] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1424056169024734287 [1.424e18], offset: -34904520632 [-3.49e10] })] }) })) [delegatecall]
+    │   │   │   ├─ [1138732] 0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5::createOrder(OrderInitialParams({ maker: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, ft: 0x0000000000000000000000000000000000000000, xt: 0x0000000000000000000000000000000000000000, debtToken: 0x0000000000000000000000000000000000000000, gt: 0x0000000000000000000000000000000000000000, virtualXtReserve: 1000000000000 [1e12], pool: 0x0000000000000000000000000000000000000000, maturity: 0, orderConfig: OrderConfig({ curveCuts: CurveCuts({ lendCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 17148936676412860051488768 [1.714e25], offset: 6547697434292 [6.547e12] }), CurveCut({ xtReserve: 8200000000 [8.2e9], liqSquare: 3601276702046700610 [3.601e18], offset: -5161974583 [-5.161e9] }), CurveCut({ xtReserve: 9000000000 [9e9], liqSquare: 51800738781260893117687869 [5.18e25], offset: 14547185370727 [1.454e13] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1554022163437826793 [1.554e18], offset: -35426169851 [-3.542e10] }), CurveCut({ xtReserve: 39000000000 [3.9e10], liqSquare: 433646276003678296168 [4.336e20], offset: 20699832775 [2.069e10] }), CurveCut({ xtReserve: 39200000000 [3.92e10], liqSquare: 1588671805064995511 [1.588e18], offset: -35574439899 [-3.557e10] })], borrowCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 12253114043286217560162304 [1.225e25], offset: 5605197689344 [5.605e12] }), CurveCut({ xtReserve: 7200000000 [7.2e9], liqSquare: 3308340791687278741 [3.308e18], offset: -4270879534 [-4.27e9] }), CurveCut({ xtReserve: 8000000000 [8e9], liqSquare: 6832763607918441056808585 [6.832e24], offset: 5351194154482 [5.351e12] }), CurveCut({ xtReserve: 19200000000 [1.92e10], liqSquare: 1571535629821241443 [1.571e18], offset: -16590539411 [-1.659e10] }), CurveCut({ xtReserve: 20000000000 [2e10], liqSquare: 3473307729328620213070793 [3.473e24], offset: 5048683691704 [5.048e12] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1424056169024734287 [1.424e18], offset: -34904520632 [-3.49e10] })] }), gtId: 0, maxXtReserve: 1000000000000000000000000 [1e24], swapTrigger: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, feeConfig: FeeConfig({ lendTakerFeeRatio: 0, lendMakerFeeRatio: 0, borrowTakerFeeRatio: 0, borrowMakerFeeRatio: 0, mintGtFeeRatio: 0, mintGtFeeRef: 0 }) }) }))
+    │   │   │   │   ├─ [1135699] TermMaxMarketV2::createOrder(OrderInitialParams({ maker: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, ft: 0x0000000000000000000000000000000000000000, xt: 0x0000000000000000000000000000000000000000, debtToken: 0x0000000000000000000000000000000000000000, gt: 0x0000000000000000000000000000000000000000, virtualXtReserve: 1000000000000 [1e12], pool: 0x0000000000000000000000000000000000000000, maturity: 0, orderConfig: OrderConfig({ curveCuts: CurveCuts({ lendCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 17148936676412860051488768 [1.714e25], offset: 6547697434292 [6.547e12] }), CurveCut({ xtReserve: 8200000000 [8.2e9], liqSquare: 3601276702046700610 [3.601e18], offset: -5161974583 [-5.161e9] }), CurveCut({ xtReserve: 9000000000 [9e9], liqSquare: 51800738781260893117687869 [5.18e25], offset: 14547185370727 [1.454e13] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1554022163437826793 [1.554e18], offset: -35426169851 [-3.542e10] }), CurveCut({ xtReserve: 39000000000 [3.9e10], liqSquare: 433646276003678296168 [4.336e20], offset: 20699832775 [2.069e10] }), CurveCut({ xtReserve: 39200000000 [3.92e10], liqSquare: 1588671805064995511 [1.588e18], offset: -35574439899 [-3.557e10] })], borrowCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 12253114043286217560162304 [1.225e25], offset: 5605197689344 [5.605e12] }), CurveCut({ xtReserve: 7200000000 [7.2e9], liqSquare: 3308340791687278741 [3.308e18], offset: -4270879534 [-4.27e9] }), CurveCut({ xtReserve: 8000000000 [8e9], liqSquare: 6832763607918441056808585 [6.832e24], offset: 5351194154482 [5.351e12] }), CurveCut({ xtReserve: 19200000000 [1.92e10], liqSquare: 1571535629821241443 [1.571e18], offset: -16590539411 [-1.659e10] }), CurveCut({ xtReserve: 20000000000 [2e10], liqSquare: 3473307729328620213070793 [3.473e24], offset: 5048683691704 [5.048e12] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1424056169024734287 [1.424e18], offset: -34904520632 [-3.49e10] })] }), gtId: 0, maxXtReserve: 1000000000000000000000000 [1e24], swapTrigger: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, feeConfig: FeeConfig({ lendTakerFeeRatio: 0, lendMakerFeeRatio: 0, borrowTakerFeeRatio: 0, borrowMakerFeeRatio: 0, mintGtFeeRatio: 0, mintGtFeeRef: 0 }) }) })) [delegatecall]
+    │   │   │   │   │   ├─ [9031] → new <unknown>@0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7
+    │   │   │   │   │   │   └─ ← [Return] 45 bytes of code
+    │   │   │   │   │   ├─ [1067164] 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7::initialize(OrderInitialParams({ maker: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, ft: 0xbfa5f620bECEd20cc371Af44AAd250baAB91be0C, xt: 0x65F89978996CdA55e8ceC00CcdcC3046fffaD3d1, debtToken: 0x3F0309B0d0aD3B8D18EB3b700C5a51ca7F45BB20, gt: 0xEd06fB022db2751C5A1Bc624569e8d2624652422, virtualXtReserve: 1000000000000 [1e12], pool: 0x0000000000000000000000000000000000000000, maturity: 1742562167 [1.742e9], orderConfig: OrderConfig({ curveCuts: CurveCuts({ lendCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 17148936676412860051488768 [1.714e25], offset: 6547697434292 [6.547e12] }), CurveCut({ xtReserve: 8200000000 [8.2e9], liqSquare: 3601276702046700610 [3.601e18], offset: -5161974583 [-5.161e9] }), CurveCut({ xtReserve: 9000000000 [9e9], liqSquare: 51800738781260893117687869 [5.18e25], offset: 14547185370727 [1.454e13] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1554022163437826793 [1.554e18], offset: -35426169851 [-3.542e10] }), CurveCut({ xtReserve: 39000000000 [3.9e10], liqSquare: 433646276003678296168 [4.336e20], offset: 20699832775 [2.069e10] }), CurveCut({ xtReserve: 39200000000 [3.92e10], liqSquare: 1588671805064995511 [1.588e18], offset: -35574439899 [-3.557e10] })], borrowCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 12253114043286217560162304 [1.225e25], offset: 5605197689344 [5.605e12] }), CurveCut({ xtReserve: 7200000000 [7.2e9], liqSquare: 3308340791687278741 [3.308e18], offset: -4270879534 [-4.27e9] }), CurveCut({ xtReserve: 8000000000 [8e9], liqSquare: 6832763607918441056808585 [6.832e24], offset: 5351194154482 [5.351e12] }), CurveCut({ xtReserve: 19200000000 [1.92e10], liqSquare: 1571535629821241443 [1.571e18], offset: -16590539411 [-1.659e10] }), CurveCut({ xtReserve: 20000000000 [2e10], liqSquare: 3473307729328620213070793 [3.473e24], offset: 5048683691704 [5.048e12] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1424056169024734287 [1.424e18], offset: -34904520632 [-3.49e10] })] }), gtId: 0, maxXtReserve: 1000000000000000000000000 [1e24], swapTrigger: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, feeConfig: FeeConfig({ lendTakerFeeRatio: 0, lendMakerFeeRatio: 0, borrowTakerFeeRatio: 0, borrowMakerFeeRatio: 0, mintGtFeeRatio: 0, mintGtFeeRef: 0 }) }) }))
+    │   │   │   │   │   │   ├─ [1064134] MockOrderV2::initialize(OrderInitialParams({ maker: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, ft: 0xbfa5f620bECEd20cc371Af44AAd250baAB91be0C, xt: 0x65F89978996CdA55e8ceC00CcdcC3046fffaD3d1, debtToken: 0x3F0309B0d0aD3B8D18EB3b700C5a51ca7F45BB20, gt: 0xEd06fB022db2751C5A1Bc624569e8d2624652422, virtualXtReserve: 1000000000000 [1e12], pool: 0x0000000000000000000000000000000000000000, maturity: 1742562167 [1.742e9], orderConfig: OrderConfig({ curveCuts: CurveCuts({ lendCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 17148936676412860051488768 [1.714e25], offset: 6547697434292 [6.547e12] }), CurveCut({ xtReserve: 8200000000 [8.2e9], liqSquare: 3601276702046700610 [3.601e18], offset: -5161974583 [-5.161e9] }), CurveCut({ xtReserve: 9000000000 [9e9], liqSquare: 51800738781260893117687869 [5.18e25], offset: 14547185370727 [1.454e13] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1554022163437826793 [1.554e18], offset: -35426169851 [-3.542e10] }), CurveCut({ xtReserve: 39000000000 [3.9e10], liqSquare: 433646276003678296168 [4.336e20], offset: 20699832775 [2.069e10] }), CurveCut({ xtReserve: 39200000000 [3.92e10], liqSquare: 1588671805064995511 [1.588e18], offset: -35574439899 [-3.557e10] })], borrowCurveCuts: [CurveCut({ xtReserve: 0, liqSquare: 12253114043286217560162304 [1.225e25], offset: 5605197689344 [5.605e12] }), CurveCut({ xtReserve: 7200000000 [7.2e9], liqSquare: 3308340791687278741 [3.308e18], offset: -4270879534 [-4.27e9] }), CurveCut({ xtReserve: 8000000000 [8e9], liqSquare: 6832763607918441056808585 [6.832e24], offset: 5351194154482 [5.351e12] }), CurveCut({ xtReserve: 19200000000 [1.92e10], liqSquare: 1571535629821241443 [1.571e18], offset: -16590539411 [-1.659e10] }), CurveCut({ xtReserve: 20000000000 [2e10], liqSquare: 3473307729328620213070793 [3.473e24], offset: 5048683691704 [5.048e12] }), CurveCut({ xtReserve: 38200000000 [3.82e10], liqSquare: 1424056169024734287 [1.424e18], offset: -34904520632 [-3.49e10] })] }), gtId: 0, maxXtReserve: 1000000000000000000000000 [1e24], swapTrigger: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, feeConfig: FeeConfig({ lendTakerFeeRatio: 0, lendMakerFeeRatio: 0, borrowTakerFeeRatio: 0, borrowMakerFeeRatio: 0, mintGtFeeRatio: 0, mintGtFeeRef: 0 }) }) })) [delegatecall]
+    │   │   │   │   │   │   │   ├─ emit OwnershipTransferred(previousOwner: 0x0000000000000000000000000000000000000000, newOwner: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4)
+    │   │   │   │   │   │   │   ├─ emit OrderInitialized(maker: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, market: 0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5)
+    │   │   │   │   │   │   │   ├─ emit Initialized(version: 1)
+    │   │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   ├─ emit CreateOrder(maker: 0xAfb2BAE342A2a96607E3C5450e57D525Fb6613B4, order: 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7)
+    │   │   │   │   │   └─ ← [Return] 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7
+    │   │   │   │   └─ ← [Return] 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7
+    │   │   │   ├─ [4046] 0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5::config() [staticcall]
+    │   │   │   │   ├─ [3838] TermMaxMarketV2::config() [delegatecall]
+    │   │   │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x8F6787ae975d0743584630A637935d3c6F5fB430, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x8F6787ae975d0743584630A637935d3c6F5fB430, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   │   ├─ emit NewOrderCreated(caller: 0x890152947a11abe0bc30307d886A208Bb7D35dd6, market: 0x637DD2Ed0fc102F37A32B4B8EF588DBA459DB8f5, order: 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7)
+    │   │   │   └─ ← [Return] 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7
+    │   │   └─ ← [Return] 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7
+    │   └─ ← [Return] 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7
+    ├─ [0] VM::stopPrank()
+    │   └─ ← [Return]
+    └─ ← [Return]
+
+  [156373] LockedFtDrift::test_lockedFtDrift_blocksSwaps()
+    ├─ [0] VM::warp(1739970167 [1.739e9])
+    │   └─ ← [Return]
+    ├─ [0] VM::randomAddress()
+    │   └─ ← [Return] 0x6Fc34a9E5309cdf1A8faced804fC1e17602abE63
+    ├─ [50973] MockERC20::mint(0x6Fc34a9E5309cdf1A8faced804fC1e17602abE63, 10000000000 [1e10])
+    │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x6Fc34a9E5309cdf1A8faced804fC1e17602abE63, amount: 10000000000 [1e10])
+    │   └─ ← [Stop]
+    ├─ [0] VM::startPrank(0x6Fc34a9E5309cdf1A8faced804fC1e17602abE63)
+    │   └─ ← [Return]
+    ├─ [45933] MockERC20::approve(0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7, 10000000000 [1e10])
+    │   ├─ emit Approval(owner: 0x6Fc34a9E5309cdf1A8faced804fC1e17602abE63, spender: 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7, amount: 10000000000 [1e10])
+    │   └─ ← [Return] true
+    ├─ [40009] 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7::swapExactTokenToToken(MockERC20: [0x3F0309B0d0aD3B8D18EB3b700C5a51ca7F45BB20], 0xbfa5f620bECEd20cc371Af44AAd250baAB91be0C, 0x6Fc34a9E5309cdf1A8faced804fC1e17602abE63, 10000000000 [1e10], 1, 1739973767 [1.739e9])
+    │   ├─ [14645] MockOrderV2::swapExactTokenToToken(MockERC20: [0x3F0309B0d0aD3B8D18EB3b700C5a51ca7F45BB20], 0xbfa5f620bECEd20cc371Af44AAd250baAB91be0C, 0x6Fc34a9E5309cdf1A8faced804fC1e17602abE63, 10000000000 [1e10], 1, 1739973767 [1.739e9]) [delegatecall]
+    │   │   └─ ← [Revert] panic: arithmetic underflow or overflow (0x11)
+    │   └─ ← [Revert] panic: arithmetic underflow or overflow (0x11)
+    └─ ← [Revert] panic: arithmetic underflow or overflow (0x11)
+
+Backtrace:
+  at MockOrderV2.swapExactTokenToToken
+  at 0xaCBefA817b2168548Fe05dB9d8DDD505D54056A7.swapExactTokenToToken
+  at LockedFtDrift.test_lockedFtDrift_blocksSwaps
+
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 22.58ms (188.77µs CPU time)
+
+Ran 1 test suite in 281.45ms (22.58ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/v2/LockedFtDrift.t.sol:LockedFtDrift
+[FAIL: panic: arithmetic underflow or overflow (0x11)] test_lockedFtDrift_blocksSwaps() (gas: 156373)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+EXIT=1
