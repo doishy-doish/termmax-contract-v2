@@ -1,10 +1,248 @@
-Warning: This is a nightly build of Foundry. It is recommended to use the latest stable version. To mute this warning set `FOUNDRY_DISABLE_NIGHTLY_WARNING` in your environment. 
+arketV2::config() [delegatecall]
+    │   │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   └─ ← [Return] 170, 152
+    │   └─ ← [Return] 170, 152
+    ├─ [8546] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::config() [staticcall]
+    │   ├─ [5838] TermMaxMarketV2::config() [delegatecall]
+    │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    ├─ [0] VM::randomAddress()
+    │   └─ ← [Return] 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8
+    ├─ [50961] MockERC20::mint(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 1000000000 [1e9])
+    │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, amount: 1000000000 [1e9])
+    │   └─ ← [Stop]
+    ├─ [0] VM::startPrank(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8)
+    │   └─ ← [Return]
+    ├─ [45921] MockERC20::approve(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   ├─ emit Approval(owner: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, spender: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   └─ ← [Return] true
+    ├─ [574358] 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B::swapExactTokenToToken(MockERC20: [0xF1e26799Ff872926268863C30c593898865E3FF9], 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf, 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 1000000000 [1e9], 980000000 [9.8e8], 1736517767 [1.736e9])
+    │   ├─ [548984] TermMaxOrderV2::swapExactTokenToToken(MockERC20: [0xF1e26799Ff872926268863C30c593898865E3FF9], 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf, 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 1000000000 [1e9], 980000000 [9.8e8], 1736517767 [1.736e9]) [delegatecall]
+    │   │   ├─ [8546] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::config() [staticcall]
+    │   │   │   ├─ [5838] TermMaxMarketV2::config() [delegatecall]
+    │   │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   ├─ [5297] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [staticcall]
+    │   │   │   ├─ [2625] MintableERC20V2::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [delegatecall]
+    │   │   │   │   └─ ← [Return] 0
+    │   │   │   └─ ← [Return] 0
+    │   │   ├─ [2797] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [staticcall]
+    │   │   │   ├─ [2625] MintableERC20V2::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [delegatecall]
+    │   │   │   │   └─ ← [Return] 0
+    │   │   │   └─ ← [Return] 0
+    │   │   ├─ [251576] 0xe603AFB1c0f77d8014269f2e74772E2D89400fB2::afterSwap(0, 0, 970588235 [9.705e8], -980362914985 [-9.803e11])
+    │   │   │   ├─ [248889] TermMaxVaultV2::afterSwap(0, 0, 970588235 [9.705e8], -980362914985 [-9.803e11]) [delegatecall]
+    │   │   │   │   ├─ [239666] OrderManagerV2::afterSwap(MockERC20: [0xF1e26799Ff872926268863C30c593898865E3FF9], 0, 0, 970588235 [9.705e8], -980362914985 [-9.803e11]) [delegatecall]
+    │   │   │   │   │   ├─ emit AccruedInterest(newAccretingPrincipal: 10000000000000000000000000000 [1e28], newPerformanceFee: 0)
+    │   │   │   │   │   ├─ [913] 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B::market() [staticcall]
+    │   │   │   │   │   │   ├─ [747] TermMaxOrderV2::market() [delegatecall]
+    │   │   │   │   │   │   │   └─ ← [Return] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA
+    │   │   │   │   │   │   └─ ← [Return] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA
+    │   │   │   │   │   ├─ [2768] MockERC20::allowance(0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA) [staticcall]
+    │   │   │   │   │   │   └─ ← [Return] 0
+    │   │   │   │   │   ├─ [22225] MockERC20::approve(0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, 980362914985 [9.803e11])
+    │   │   │   │   │   │   ├─ emit Approval(owner: 0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, spender: 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, amount: 980362914985 [9.803e11])
+    │   │   │   │   │   │   └─ ← [Return] true
+    │   │   │   │   │   ├─ [139743] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 980362914985 [9.803e11])
+    │   │   │   │   │   │   ├─ [139568] TermMaxMarketV2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 980362914985 [9.803e11]) [delegatecall]
+    │   │   │   │   │   │   │   ├─ [30223] MockERC20::transferFrom(0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, 980362914985 [9.803e11])
+    │   │   │   │   │   │   │   │   ├─ emit Transfer(from: 0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, to: 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, amount: 980362914985 [9.803e11])
+    │   │   │   │   │   │   │   │   └─ ← [Return] true
+    │   │   │   │   │   │   │   ├─ [46961] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 980362914985 [9.803e11])
+    │   │   │   │   │   │   │   │   ├─ [46786] MintableERC20V2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 980362914985 [9.803e11]) [delegatecall]
+    │   │   │   │   │   │   │   │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 980362914985 [9.803e11])
+    │   │   │   │   │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   │   │   ├─ [46961] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 980362914985 [9.803e11])
+    │   │   │   │   │   │   │   │   ├─ [46786] MintableERC20V2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 980362914985 [9.803e11]) [delegatecall]
+    │   │   │   │   │   │   │   │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 980362914985 [9.803e11])
+    │   │   │   │   │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   │   │   ├─ emit Mint(caller: 0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, receiver: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 980362914985 [9.803e11])
+    │   │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   └─ ← [Stop]
+    │   │   │   └─ ← [Return]
+    │   │   ├─ [35023] MockERC20::transferFrom(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   │   │   ├─ emit Transfer(from: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ [797] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [staticcall]
+    │   │   │   ├─ [625] MintableERC20V2::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [delegatecall]
+    │   │   │   │   └─ ← [Return] 980362914985 [9.803e11]
+    │   │   │   └─ ← [Return] 980362914985 [9.803e11]
+    │   │   ├─ [797] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [staticcall]
+    │   │   │   ├─ [625] MintableERC20V2::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [delegatecall]
+    │   │   │   │   └─ ← [Return] 980362914985 [9.803e11]
+    │   │   │   └─ ← [Return] 980362914985 [9.803e11]
+    │   │   ├─ [2768] MockERC20::allowance(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA) [staticcall]
+    │   │   │   └─ ← [Return] 0
+    │   │   ├─ [22225] MockERC20::approve(0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, 1000000000 [1e9])
+    │   │   │   ├─ emit Approval(owner: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, spender: 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, amount: 1000000000 [1e9])
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ [17443] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   │   │   ├─ [17268] TermMaxMarketV2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9]) [delegatecall]
+    │   │   │   │   ├─ [3523] MockERC20::transferFrom(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, 1000000000 [1e9])
+    │   │   │   │   │   ├─ emit Transfer(from: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, to: 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, amount: 1000000000 [1e9])
+    │   │   │   │   │   └─ ← [Return] true
+    │   │   │   │   ├─ [3161] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   │   │   │   │   ├─ [2986] MintableERC20V2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9]) [delegatecall]
+    │   │   │   │   │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   ├─ [3161] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   │   │   │   │   ├─ [2986] MintableERC20V2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9]) [delegatecall]
+    │   │   │   │   │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   ├─ emit Mint(caller: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, receiver: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   │   │   │   └─ ← [Return]
+    │   │   │   └─ ← [Return]
+    │   │   ├─ [25200] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::transfer(0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, 29411765 [2.941e7])
+    │   │   │   ├─ [25022] MintableERC20V2::transfer(0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, 29411765 [2.941e7]) [delegatecall]
+    │   │   │   │   ├─ emit Transfer(from: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, to: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, amount: 29411765 [2.941e7])
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ [25200] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::transfer(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 981362914985 [9.813e11])
+    │   │   │   ├─ [25022] MintableERC20V2::transfer(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 981362914985 [9.813e11]) [delegatecall]
+    │   │   │   │   ├─ emit Transfer(from: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, to: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, amount: 981362914985 [9.813e11])
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ emit SwapExactTokenToToken(tokenIn: MockERC20: [0xF1e26799Ff872926268863C30c593898865E3FF9], tokenOut: 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf, caller: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, recipient: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, tokenAmtIn: 1000000000 [1e9], netTokenOut: 981362914985 [9.813e11], feeAmt: 29411765 [2.941e7])
+    │   │   └─ ← [Return] 981362914985 [9.813e11]
+    │   └─ ← [Return] 981362914985 [9.813e11]
+    ├─ [0] VM::stopPrank()
+    │   └─ ← [Return]
+    └─ ← [Return]
 
-Warning: Selected profile `ci` does not exist; falling back to the default profile.
-Error: Compiler run failed:
-Error (9182): Function, variable, struct or modifier declaration expected.
-   --> test/v2/LockedFtDrift.t.sol:189:1:
-    |
-189 | 
-    | ^
-EXIT=1
+[PASS] test_lockedFtDrift_30d() (gas: 789696)
+Traces:
+  [887296] LockedFtDrift::test_lockedFtDrift_30d()
+    ├─ [0] VM::warp(1737378167 [1.737e9])
+    │   └─ ← [Return]
+    ├─ [105809] 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B::apr() [staticcall]
+    │   ├─ [103137] TermMaxOrderV2::apr() [delegatecall]
+    │   │   ├─ [8546] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::config() [staticcall]
+    │   │   │   ├─ [5838] TermMaxMarketV2::config() [delegatecall]
+    │   │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   └─ ← [Return] 170, 152
+    │   └─ ← [Return] 170, 152
+    ├─ [8546] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::config() [staticcall]
+    │   ├─ [5838] TermMaxMarketV2::config() [delegatecall]
+    │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    ├─ [0] VM::randomAddress()
+    │   └─ ← [Return] 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8
+    ├─ [50961] MockERC20::mint(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 1000000000 [1e9])
+    │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, amount: 1000000000 [1e9])
+    │   └─ ← [Stop]
+    ├─ [0] VM::startPrank(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8)
+    │   └─ ← [Return]
+    ├─ [45921] MockERC20::approve(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   ├─ emit Approval(owner: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, spender: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   └─ ← [Return] true
+    ├─ [574358] 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B::swapExactTokenToToken(MockERC20: [0xF1e26799Ff872926268863C30c593898865E3FF9], 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf, 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 1000000000 [1e9], 980000000 [9.8e8], 1737381767 [1.737e9])
+    │   ├─ [548984] TermMaxOrderV2::swapExactTokenToToken(MockERC20: [0xF1e26799Ff872926268863C30c593898865E3FF9], 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf, 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 1000000000 [1e9], 980000000 [9.8e8], 1737381767 [1.737e9]) [delegatecall]
+    │   │   ├─ [8546] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::config() [staticcall]
+    │   │   │   ├─ [5838] TermMaxMarketV2::config() [delegatecall]
+    │   │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   │   └─ ← [Return] MarketConfig({ treasurer: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, maturity: 1742562167 [1.742e9], feeConfig: FeeConfig({ lendTakerFeeRatio: 1000000 [1e6], lendMakerFeeRatio: 1000000 [1e6], borrowTakerFeeRatio: 2000000 [2e6], borrowMakerFeeRatio: 2000000 [2e6], mintGtFeeRatio: 1000000 [1e6], mintGtFeeRef: 2000000 [2e6] }) })
+    │   │   ├─ [5297] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [staticcall]
+    │   │   │   ├─ [2625] MintableERC20V2::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [delegatecall]
+    │   │   │   │   └─ ← [Return] 0
+    │   │   │   └─ ← [Return] 0
+    │   │   ├─ [2797] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [staticcall]
+    │   │   │   ├─ [2625] MintableERC20V2::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [delegatecall]
+    │   │   │   │   └─ ← [Return] 0
+    │   │   │   └─ ← [Return] 0
+    │   │   ├─ [251576] 0xe603AFB1c0f77d8014269f2e74772E2D89400fB2::afterSwap(0, 0, 970588235 [9.705e8], -983852172799 [-9.838e11])
+    │   │   │   ├─ [248889] TermMaxVaultV2::afterSwap(0, 0, 970588235 [9.705e8], -983852172799 [-9.838e11]) [delegatecall]
+    │   │   │   │   ├─ [239666] OrderManagerV2::afterSwap(MockERC20: [0xF1e26799Ff872926268863C30c593898865E3FF9], 0, 0, 970588235 [9.705e8], -983852172799 [-9.838e11]) [delegatecall]
+    │   │   │   │   │   ├─ emit AccruedInterest(newAccretingPrincipal: 10000000000000000000000000000 [1e28], newPerformanceFee: 0)
+    │   │   │   │   │   ├─ [913] 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B::market() [staticcall]
+    │   │   │   │   │   │   ├─ [747] TermMaxOrderV2::market() [delegatecall]
+    │   │   │   │   │   │   │   └─ ← [Return] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA
+    │   │   │   │   │   │   └─ ← [Return] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA
+    │   │   │   │   │   ├─ [2768] MockERC20::allowance(0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA) [staticcall]
+    │   │   │   │   │   │   └─ ← [Return] 0
+    │   │   │   │   │   ├─ [22225] MockERC20::approve(0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, 983852172799 [9.838e11])
+    │   │   │   │   │   │   ├─ emit Approval(owner: 0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, spender: 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, amount: 983852172799 [9.838e11])
+    │   │   │   │   │   │   └─ ← [Return] true
+    │   │   │   │   │   ├─ [139743] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 983852172799 [9.838e11])
+    │   │   │   │   │   │   ├─ [139568] TermMaxMarketV2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 983852172799 [9.838e11]) [delegatecall]
+    │   │   │   │   │   │   │   ├─ [30223] MockERC20::transferFrom(0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, 983852172799 [9.838e11])
+    │   │   │   │   │   │   │   │   ├─ emit Transfer(from: 0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, to: 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, amount: 983852172799 [9.838e11])
+    │   │   │   │   │   │   │   │   └─ ← [Return] true
+    │   │   │   │   │   │   │   ├─ [46961] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 983852172799 [9.838e11])
+    │   │   │   │   │   │   │   │   ├─ [46786] MintableERC20V2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 983852172799 [9.838e11]) [delegatecall]
+    │   │   │   │   │   │   │   │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 983852172799 [9.838e11])
+    │   │   │   │   │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   │   │   ├─ [46961] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 983852172799 [9.838e11])
+    │   │   │   │   │   │   │   │   ├─ [46786] MintableERC20V2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 983852172799 [9.838e11]) [delegatecall]
+    │   │   │   │   │   │   │   │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 983852172799 [9.838e11])
+    │   │   │   │   │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   │   │   ├─ emit Mint(caller: 0xe603AFB1c0f77d8014269f2e74772E2D89400fB2, receiver: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 983852172799 [9.838e11])
+    │   │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   └─ ← [Stop]
+    │   │   │   └─ ← [Return]
+    │   │   ├─ [35023] MockERC20::transferFrom(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   │   │   ├─ emit Transfer(from: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ [797] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [staticcall]
+    │   │   │   ├─ [625] MintableERC20V2::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [delegatecall]
+    │   │   │   │   └─ ← [Return] 983852172799 [9.838e11]
+    │   │   │   └─ ← [Return] 983852172799 [9.838e11]
+    │   │   ├─ [797] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [staticcall]
+    │   │   │   ├─ [625] MintableERC20V2::balanceOf(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B) [delegatecall]
+    │   │   │   │   └─ ← [Return] 983852172799 [9.838e11]
+    │   │   │   └─ ← [Return] 983852172799 [9.838e11]
+    │   │   ├─ [2768] MockERC20::allowance(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA) [staticcall]
+    │   │   │   └─ ← [Return] 0
+    │   │   ├─ [22225] MockERC20::approve(0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, 1000000000 [1e9])
+    │   │   │   ├─ emit Approval(owner: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, spender: 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, amount: 1000000000 [1e9])
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ [17443] 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   │   │   ├─ [17268] TermMaxMarketV2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9]) [delegatecall]
+    │   │   │   │   ├─ [3523] MockERC20::transferFrom(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, 1000000000 [1e9])
+    │   │   │   │   │   ├─ emit Transfer(from: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, to: 0xBF419C1b4A11720E2d8FA6dE70260C4e5c837CdA, amount: 1000000000 [1e9])
+    │   │   │   │   │   └─ ← [Return] true
+    │   │   │   │   ├─ [3161] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   │   │   │   │   ├─ [2986] MintableERC20V2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9]) [delegatecall]
+    │   │   │   │   │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   ├─ [3161] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9])
+    │   │   │   │   │   ├─ [2986] MintableERC20V2::mint(0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, 1000000000 [1e9]) [delegatecall]
+    │   │   │   │   │   │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   │   │   │   │   │   └─ ← [Stop]
+    │   │   │   │   │   └─ ← [Return]
+    │   │   │   │   ├─ emit Mint(caller: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, receiver: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, amount: 1000000000 [1e9])
+    │   │   │   │   └─ ← [Return]
+    │   │   │   └─ ← [Return]
+    │   │   ├─ [25200] 0x7976842b071Dda6B8B42D59d889570EF2FEE9e82::transfer(0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, 29411765 [2.941e7])
+    │   │   │   ├─ [25022] MintableERC20V2::transfer(0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, 29411765 [2.941e7]) [delegatecall]
+    │   │   │   │   ├─ emit Transfer(from: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, to: 0x27FDe2dAdE42c7B3Ab81F979af8A2Cc21665eeaA, amount: 29411765 [2.941e7])
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ [25200] 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf::transfer(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 984852172799 [9.848e11])
+    │   │   │   ├─ [25022] MintableERC20V2::transfer(0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, 984852172799 [9.848e11]) [delegatecall]
+    │   │   │   │   ├─ emit Transfer(from: 0x826927bD7519657c1b07886F14b6DD5769Ac5D9B, to: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, amount: 984852172799 [9.848e11])
+    │   │   │   │   └─ ← [Return] true
+    │   │   │   └─ ← [Return] true
+    │   │   ├─ emit SwapExactTokenToToken(tokenIn: MockERC20: [0xF1e26799Ff872926268863C30c593898865E3FF9], tokenOut: 0xb8447Ea50D936D03E7cE8654236fd19e0502B8Bf, caller: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, recipient: 0xab5362FFbBE84F4693072EDD7254F26e846aA6b8, tokenAmtIn: 1000000000 [1e9], netTokenOut: 984852172799 [9.848e11], feeAmt: 29411765 [2.941e7])
+    │   │   └─ ← [Return] 984852172799 [9.848e11]
+    │   └─ ← [Return] 984852172799 [9.848e11]
+    ├─ [0] VM::stopPrank()
+    │   └─ ← [Return]
+    └─ ← [Return]
+
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 20.96ms (3.26ms CPU time)
+
+Ran 1 test suite in 36.61ms (20.96ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)
+EXIT=0
