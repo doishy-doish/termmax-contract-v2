@@ -14,6 +14,8 @@ jobs:
       - uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
+      - name: Install soldeer deps
+        run: forge soldeer install
       - name: Run LockedFtDrift
         run: |
           set +e
