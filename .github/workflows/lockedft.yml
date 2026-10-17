@@ -19,7 +19,7 @@ jobs:
           set +e
           env FOUNDRY_PROFILE=ci forge test --match-contract LockedFtDrift -vvvv > lockedft-out.txt 2>&1
           echo "EXIT=$?" >> lockedft-out.txt
-          tail -c 60000 lockedft-out.txt > lockedft-tail.txt || cp lockedft-out.txt lockedft-tail.txt
+          head -c 30000 lockedft-out.txt > lockedft-tail.txt
           git config user.name "lockedft-bot"
           git config user.email "lockedft-bot@local"
           git add -f lockedft-tail.txt
